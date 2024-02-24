@@ -19,11 +19,12 @@ def new(lst):
     for i in lst:
         print(i)
         # print (i.find_all('a'))
-        if( 'a' in i):
-            print('hi')
-        # for j in i:
-        #     if(j == 'a'):
-        #         print('hi')
+        # if('a' in i):
+            # print('hi')
+        for j in i:
+            if(j == 'a'):
+                print()
+                print('hi')
 
 new(lst)
 
