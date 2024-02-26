@@ -1,39 +1,20 @@
+import text
+
 a = "Sapeksh Pareek Sarthak Nagar Shivansh Bhatnagar"
 b = "Sarthak Nagar"
-c = "Shivansh Bhatnagar"
+c = "Shivansh"
 d = "Nimit Agrawal"
 
-lst = []
+lst = text.convert(a)
+# print(lst)
+
+index = text.finder(a, "a")
+print(index)
+
+test = []
+for i in index:
+    z = i+1
+    test.append(z)
+print(test)
 
 
-def convert(string):
-    li = list(string.split(" "))
-    # return li
-    for i in li:
-        lst.append(i)
-        # print(i)
-
-convert(a)
-
-def new(lst):
-    for i in lst:
-        print(i)
-        # print (i.find_all('a'))
-        # if('a' in i):
-            # print('hi')
-        for j in i:
-            if(j == 'a'):
-                print()
-                print('hi')
-
-new(lst)
-
-def find_all(a_str, sub):
-    start = 0
-    while True:
-        start = a_str.find(sub, start)
-        if start == -1: return
-        yield start
-        start += len(sub) # use start += 1 to find overlapping matches
-
-find_all('spam spam spam spam', 'am') # [0, 5, 10, 15]
