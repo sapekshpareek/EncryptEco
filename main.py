@@ -1,20 +1,30 @@
 import text
 
 a = "Sapeksh Pareek Sarthak Nagar Shivansh Bhatnagar"
+print(a)
 b = "Sarthak Nagar"
-c = "Shivansh"
+dict = {"Sarthak": "sar", "Nagar": "nag"}
 d = "Nimit Agrawal"
-
 lst = text.convert(a)
 # print(lst)
+# wrd = text.convert(b)
+# print(lst)
+# print(wrd)
 
-index = text.finder(a, "a")
-print(index)
+# index = text.finder(a, "a")
+# print(index)
 
-test = []
-for i in index:
-    z = i+1
-    test.append(z)
-print(test)
+# for i in lst:
+#     if i in wrd:
+#         print("Yes")
+#     else:
+#         print("NO")
 
+# print(str(dict))
 
+for i in range(len(lst)):
+    if lst[i] in dict.keys():
+        lst[i] = dict.get(lst[i])
+# print(lst)
+str = " "
+print(str.join(lst))
