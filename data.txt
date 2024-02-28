@@ -1,0 +1,6 @@
+{"sarthak": "sar",
+ "nagar": "nag",
+ "sapeksh": "sap",
+ "pareek": "par",
+ "bhatnagar": "bha",
+ "shivansh": "shi"}

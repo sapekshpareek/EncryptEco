@@ -1,30 +1,12 @@
+import json
 import text
+import encryption
 
-a = "Sapeksh Pareek Sarthak Nagar Shivansh Bhatnagar"
-print(a)
-b = "Sarthak Nagar"
-dict = {"Sarthak": "sar", "Nagar": "nag"}
-d = "Nimit Agrawal"
-lst = text.convert(a)
-# print(lst)
-# wrd = text.convert(b)
-# print(lst)
-# print(wrd)
+data = text.read('data.txt')
+data = json.loads(data)
 
-# index = text.finder(a, "a")
-# print(index)
+input = text.read('input.txt')
+input = input.lower()
+print(input)
 
-# for i in lst:
-#     if i in wrd:
-#         print("Yes")
-#     else:
-#         print("NO")
-
-# print(str(dict))
-
-for i in range(len(lst)):
-    if lst[i] in dict.keys():
-        lst[i] = dict.get(lst[i])
-# print(lst)
-str = " "
-print(str.join(lst))
+encryption.encrypt(text.convert(input), data)
