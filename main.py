@@ -1,12 +1,17 @@
 import json
 import text
+import data
 import encryption
 
-data = text.read('data.txt')
-data = json.loads(data)
+dataf = text.read('data.txt')
+dataf = json.loads(dataf)
 
-input = text.read('input.txt')
-input = input.lower()
+input = text.read('input.txt').lower()
 print(input)
 
-encryption.encrypt(text.convert(input), data)
+# chrr = []
+# dict1 = {}
+# data.write(chrr, dict1)
+
+
+encryption.encrypt(text.convert(input), dataf)
