@@ -12,6 +12,7 @@ def dictcont(dict1, chrr):
 
     with open('data.txt', 'w') as f:
         f.write(json.dumps(dict1))
+    print('\nSuccess!\nNew Data of size', len(dict1), 'words is loaded from sample.txt and stored in data.txt.')
 
 
 def write(chrr, dict1):

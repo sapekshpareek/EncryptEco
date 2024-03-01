@@ -6,12 +6,25 @@ import encryption
 dataf = text.read('data.txt')
 dataf = json.loads(dataf)
 
-input = text.read('input.txt').lower()
-print(input)
+def choice():
+    a = int(input("Enter Your Choice\n1. Encryption\t\t2. Load Data\n3. Quit\n\nEnter Your Choice: "))
+    if a==1:
+        input_data = text.read('input.txt').lower()
+        print('\nEncrypting Data from input.txt...')
+        encryption.encrypt(text.convert(input_data), dataf)
+        print('\nSuccess!\nEncrypted Data stored in ouput.txt.')
 
-# chrr = []
-# dict1 = {}
-# data.write(chrr, dict1)
+    elif a==2:
+        chrr = []
+        dict1 = {}
+        data.write(chrr, dict1)
 
+    elif a==3:
+        print('\nHave a nice Day!')
+        return
 
-encryption.encrypt(text.convert(input), dataf)
+    else:
+        print('\nEnter a Valid Choice!\n')
+        choice()
+
+choice()
