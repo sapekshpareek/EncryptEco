@@ -25,4 +25,3 @@ def write(chrr, dict1):
                 c = b + ar
                 chrr.append(str(c))
     dictcont(dict1, chrr)
-
