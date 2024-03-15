@@ -11,7 +11,7 @@ def choice():
     if a==1:
         input_data = text.read('input.txt').lower()
         print('\nEncrypting Data from input.txt...')
-        encryption.encrypt(text.convert(input_data), dataf)
+        encryption.encrypt_main(text.convert(input_data), dataf)
         print('\nSuccess!\nEncrypted Data stored in ouput.txt.')
 
     elif a==2:
@@ -27,4 +27,4 @@ def choice():
         print('\nEnter a Valid Choice!\n')
         choice()
 
-# choice()
+choice()
