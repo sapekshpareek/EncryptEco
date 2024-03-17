@@ -6,3 +6,4 @@ def read(file):
   with open(file) as f:
     data = f.read()
     return data
+
