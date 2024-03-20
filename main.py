@@ -1,14 +1,17 @@
+import time
 import json
 import text
 import data
 import encryption
 import decryption
 
+curr = time.time()
 dataf = text.read('data.txt')
 dataf = json.loads(dataf)
 
+a=1
 def choice():
-    a = int(input("Enter Your Choice\n1. Encryption\t\t2. Decryption\n3. Load Data\t\t4. Quit\n\nEnter Your Choice: "))
+    # a = int(input("Enter Your Choice\n1. Encryption\t\t2. Decryption\n3. Load Data\t\t4. Quit\n\nEnter Your Choice: "))
     if a==1:
         input_data = text.read('input.txt').lower()
         print('\nEncrypting Data from input.txt...')
@@ -35,4 +38,8 @@ def choice():
         print('\nEnter a Valid Choice!\n')
         choice()
 
+
 choice()
+
+new = time.time()
+print('\nDuration: {}'.format(new-curr))

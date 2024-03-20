@@ -8,8 +8,6 @@ def decrypt_main(encodedtext, key, data):
     decrypted_data = algo.decrypt_AES(encodedtext, key)
     decrypted_data = decrypted_data.decode()
     decrypted_data = text.convert(decrypted_data)
-    # print(decrypted_data)
-    # print(list(data.keys())[list(data.values()).index('aab')])
     values = list(data.values())
     keys = list(data.keys())
     for i in range(len(decrypted_data)):
