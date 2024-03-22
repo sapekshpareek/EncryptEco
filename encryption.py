@@ -10,6 +10,6 @@ def encrypt_main(lst, data):
     plaintext = text.encode()
     encrypted_data = algo.encrypt_AES(plaintext, key).hex()
     size = str(encrypted_data)
-    print('\nLength of THe Encrypted Data: ', len(size))
+    print('\nLength of The Encrypted Data: ', len(size))
     with open('output.txt', 'w') as f:
         f.write(encrypted_data)
