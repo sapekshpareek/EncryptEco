@@ -1,5 +1,33 @@
-sss_data = {1000: 8000, 2500: 20032, 5000: 40032, 10000: 80032, 50000: 400128, 100000: 800224}
-aes_data = {1000: 16768, 2500: 41536, 5000: 83552, 10000: 159424, 50000: 797792, 100000: 1595584}
+import matplotlib.pyplot as plt
 
-sss_time = {1000: 20008087158203125, 2500: 3000020980834961, 5000: 40009021759033203, 10000: 500035285949707, 50000: 1608443260192871, 100000: 28116226196289062}
-aes_time = {1000: 00000000000000000, 2500: 10013580322265625, 5000: 10001659393310547, 10000: 10006427764892578, 50000: 4001140594482422, 100000: 7011175155639648}
+sss_data = {1: 8.000, 2.5: 20.032, 5: 40.032, 10: 80.032, 50: 400.128, 100: 800.224}
+aes_data = {1: 16.768, 2.5: 41.536, 5: 83.552, 10: 159.424, 50: 797.792, 100: 1595.584}
+
+sss_time = {1: 0.20008087158203125, 2.5: 0.3000020980834961, 5: 0.40009021759033203, 10: 0.500035285949707, 50: 1.608443260192871, 100: 2.8116226196289062}
+aes_time = {1: 0.00000000000000000, 2.5: 0.10013580322265625, 5: 0.10001659393310547, 10: 0.10006427764892578, 50: 0.4001140594482422, 100: 0.7011175155639648}
+
+def storageGraph():
+    words_aes = []
+    storage_aes = []
+    words_sss = []
+    storage_sss = []
+
+    for i in aes_data:
+        words_aes.append(i)
+        storage_aes.append(aes_data.get(i))
+        words_sss.append(i)
+        storage_sss.append(sss_data.get(i))
+
+    plt.plot(words_aes, storage_aes, label = 'AES')
+    plt.plot(words_sss, storage_sss, label = 'SSS')
+    plt.xlabel('No. of Words in Thousands')
+    plt.ylabel('Storage in Kilo Bytes')
+    plt.title('Storage Comparison Between AES and SSS')
+    plt.legend()
+    plt.show()
+    return
+
+
+# def timeGraph():
+
+storageGraph()
