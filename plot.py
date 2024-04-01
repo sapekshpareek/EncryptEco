@@ -28,6 +28,24 @@ def storageGraph():
     return
 
 
-# def timeGraph():
+def timeGraph():
+    words_aes = []
+    time_aes = []
+    words_sss = []
+    time_sss = []
 
+    for i in aes_time:
+        words_aes.append(i)
+        time_aes.append(aes_time.get(i))
+        words_sss.append(i)
+        time_sss.append(sss_time.get(i))
+    plt.plot(words_aes, time_aes, label = 'AES')
+    plt.plot(words_sss, time_sss, label='SSS')
+    plt.xlabel('Words in Thousands')
+    plt.ylabel('Time in Seconds')
+    plt.title('Time Comparison Between AES and SSS')
+    plt.legend()
+    plt.show()
+
+# timeGraph()
 storageGraph()
