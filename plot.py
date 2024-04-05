@@ -42,7 +42,7 @@ def timeGraph():
     plt.plot(words_aes, time_aes, label = 'AES')
     plt.plot(words_sss, time_sss, label='SSS')
     plt.xlabel('Words in Thousands')
-    plt.ylabel('Time in Seconds')
+    plt.ylabel('Time in Milliseconds')
     plt.title('Time Comparison Between AES and SSS')
     plt.legend()
     plt.show()

@@ -56,4 +56,4 @@ def choice():
 choice()
 
 new = time.time()
-print('\nDuration: {}'.format((new-curr)*100))
+print('\nDuration: {} seconds'.format(new-curr))
