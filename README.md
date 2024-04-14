@@ -1,4 +1,4 @@
-# Creating Encryption Techniques Using Python
+# EncryptEco
 
 This Python project aims to implement encryption techniques, including AES (Advanced Encryption Standard), to enhance storage efficiency. The project includes functionalities for both encryption and decryption, with a focus on simplicity, efficiency, and reliability.
 
@@ -17,13 +17,13 @@ To run the project, follow these steps:
 1. Clone the project repository to your local machine.
 
 ```
-git clone http://github.com/sapekshpareek/Minor-2
+git clone http://github.com/sapekshpareek/EncrpytEco
 ```
 
 2. Navigate to the project directory.
 
 ```
-cd Minor-2
+cd EncryptEco
 ```
 
 3. Install the required dependencies using the command.
