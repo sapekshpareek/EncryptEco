@@ -17,7 +17,7 @@ To run the project, follow these steps:
 1. Clone the project repository to your local machine.
 
 ```
-git clone http://github.com/sapekshpareek/EncrpytEco
+git clone http://github.com/sapekshpareek/EncrpytEco.git
 ```
 
 2. Navigate to the project directory.
